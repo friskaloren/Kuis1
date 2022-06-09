@@ -4,9 +4,9 @@ public class Kuis1 {
     public static void main(String[] args) throws Exception {
         int pilihan;
         int jumlahtf = 0;
-        int norektujuan = 0;
-        int reksusi = 213456;
-        int rekbudi = 314865;
+        String norektujuan;
+        String reksusi = "0213456";
+        String rekbudi = "0314865";
         int saldosusi = 1000000;
         int saldobudi = 0;
         String yn = "y";
@@ -27,9 +27,9 @@ public class Kuis1 {
                 System.out.println("Menu Transfer");
                 System.out.println("-------------");
                 System.out.println("Masukkan Nomor Rekening yang Dituju: ");
-                norektujuan = keyboard.nextInt();
+                norektujuan = keyboard.next();
                 while(true){
-                    if(norektujuan==rekbudi){
+                    if(norektujuan.equals(rekbudi)){
                        do{
                            System.out.println("Masukkan Jumlah yang Ditransfer: ");
                            jumlahtf = keyboard.nextInt();
